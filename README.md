@@ -70,6 +70,65 @@ A language is statically typed, if the type of the variable is known at compile 
 
 ---
 
+#### Installation
+ 
 
+##### Java
+
+* On CentOS, enter
+ ```
+ sudo yum install java-x.x.x-openjdk-devel
+ ```
+* It will install java in the folder `/usr/lib/jvm/java-x.x.x` folder and also create a sym link to `/usr/bin/`.
+* Set `PATH` and `JAVA_HOME` to point the location where `java` and `javac` are present. The OS uses the `PATH` variable to find where java is. Some other tools like `Maven` uses `JAVA_HOME` to find where java is.
+* `CLASSPATH` java env variable should be set for java project to the place where jars, class etc are present. 
+
+
+##### Python
+
+* `Python` by default is installed on CentOS. Python 2.6 is used by `YUM` tool in CentOS. 
+* `$PATH` env variable should point to the location where `python` is installed.
+* Use `setup.py` in your proj, to get the required dependencies. `setuptools`,`pip` and `virtualenv` are some tools used for managing packages in Python.
+
+##### Ruby
+
+* On CentOS, enter
+```
+sudo yum install ruby
+```
+* Install `ruby` dependencies 
+```
+yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+yum install ruby-rdoc ruby-devel
+```
+* Install `ruby gems` to manage dependencies. 
+* `$PATH` env variable should point to the location where `ruby` is installed. 
+
+####Python Project Structure
+
+```
+|- LICENSE
+|- README.md
+|- TODO.md
+|- docs
+|   |-- conf.py
+|   |-- generated
+|   |-- index.rst
+|   |-- installation.rst
+|   |-- modules.rst
+|   |-- quickstart.rst
+|   |-- sandman.rst
+|- requirements.txt
+|- sandman
+|   |-- __init__.py
+|   |-- exception.py
+|   |-- model.py
+|   |-- sandman.py
+|   |-- test
+|       |-- models.py
+|       |-- test_sandman.py
+|- setup.py
+```
+Credits: [here](https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/)
 
 
