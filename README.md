@@ -64,7 +64,7 @@ A language is statically typed, if the type of the variable is known at compile 
 
 | `Java` |`Python` | `Ruby` |
 | :--: | :--: | :--: |
-| `Runs inside a JVM. The compiled code(by tecode) is executed by JVM. As bytecode is nearer to machine code, the code executes quickly.` | `Runs inside a VM. The interpreter, converts the source code into a intermediate form(.pyc) and executes it` | `Runs inside a VM. The interpreter converts the source into a intermediate form(YARV inst, from 1.9) and executes it` |
+| `Runs inside a JVM. The compiled code(by tecode) is executed by JVM. As bytecode is nearer to machine code, the code executes quickly.` | `Runs inside a Python VM. The interpreter, converts the source code into a intermediate form(.pyc) and executes it. Python interpreter is Cpython. Four steps in running a python program are tokenization,parsing(AST tree),compiling(Python bytecode),execution/interpreting.` | `Runs inside a Ruby VM. The interpreter converts the source into a intermediate form(YARV inst, from 1.9) and executes it. Ruby interpreter is MRT. Four steps in running ruby program, tokenization,parsing(AST tree),compiling(YARV inst),interpreting.` |
 
 **TODO:** Memory usage and runtime speed comparsion
 
