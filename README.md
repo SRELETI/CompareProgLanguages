@@ -56,7 +56,7 @@ A language is statically typed, if the type of the variable is known at compile 
 
 |`Java` | `Python` | `Ruby`
 | :--:  | :--: | :--:
-| `Java compiles the source code into bytecode. A tool +javac+ is used for compilation. As the complete program is read and compiled, javac uses a lot of memory.` | `Python compiles the source code into a intermediate form internally during execution. As it is a interpreted language, each line is interpreted at a time. So, it doesn't need large memory`| `Ruby compiles the source code into intermediate form internally during execution . Doesn't require much memory. Till 1.8, no intermediate conversion was done. From 1.9, the source code is compiled into intermediate form.`
+| `Java compiles the source code into bytecode. A tool +javac+ is used for compilation. As the complete program is read and compiled, javac uses a lot of memory.Five Steps in java code compilation are tokenization,parsing,type checking,code optimization,compiling/code transformation.` | `Python compiles the source code into a intermediate form internally during execution. As it is a interpreted language, each line is interpreted at a time. So, it doesn't need large memory`| `Ruby compiles the source code into intermediate form internally during execution . Doesn't require much memory. Till 1.8, no intermediate conversion was done. From 1.9, the source code is compiled into intermediate form.`
 
 ---
 
