@@ -16,7 +16,16 @@ Keywords               |   ```49 keywords, all starting with small letter```    
  
 **Python:** 
 
-Python lexical analyzer uses special tokens called `INDENT` and `DEDENT` to check the indentation and dedentation in the program. `Whitespaces` and `new line` characters are used to separate tokens and lines respectively. `Whitespaces` in `comments` and `strings` doesn't separate tokens. 
+Python lexical analyzer uses special tokens called `INDENT` and `DEDENT` to check the indentation and dedentation in the program. `Whitespaces` and `new line` characters are used to separate tokens and lines respectively. `Whitespaces` in `comments` and `strings` doesn't separate tokens.
+
+**Python Identifiers:** 
+
+* Class name Identifier starts with captial letter. All others start with lowercase letter.
+* Private Identifier has a leading underscore.
+* Strongly private Identifier has two leading underscores.
+* If a identifier also has two trailing underscores, then it is language defined special name. 
+
+A single `_` underscore at the beginning of the identifier means, the method/data member is a private member of the class and doing `from <module/package> import *` will not fetch the private member. A double `__` at the beginning of the identifier with a max of one trailing `_` means, the method cant be overridden.
 
 ---
 
@@ -50,7 +59,21 @@ A language is statically typed, if the type of the variable is known at compile 
     * More bugs at run time.  
 ---
 
-#####Blocks
+####Blocks
+
+##### Java
+
+* Java uses flower brackets `{` and `}` to denote blocks of code.
+
+##### Python
+
+* Python uses indentation to denote blocks of code. 
+
+##### Ruby
+
+* Ruby uses `do(some cases)` and `end` to denote blocks of code.
+
+
 
 #### Compilation
 
@@ -103,6 +126,40 @@ yum install ruby-rdoc ruby-devel
 ```
 * Install `ruby gems` to manage dependencies. 
 * `$PATH` env variable should point to the location where `ruby` is installed. 
+
+---
+
+#### IDE's/Editors
+
+##### Java
+
+* Most Popular Java IDE is `Eclipse`. As, java is a language with lot of boilerplate code, it makes sense to use IDE's which will auto generate the boilerplate code and make the developer more productive. 
+
+##### Python
+
+* Python developer mostly use `Text Editors(Sublime Text, Vim, Atom)` to code. This is because, python has less/no boilerplate  code and Python community feels that, the auto code completion will prevent their users from learning the language deeply. Some developers use IDE's too.  
+
+##### Ruby 
+
+* Same with Ruby. Ruby developers mostly use `Text Editors` 
+
+---
+
+#### Interactive Mode
+
+##### Java: 
+
+* N/A
+
+##### Python: 
+
+* Run `python`. Run `exit()` to exit from interactive mode.
+
+##### Ruby 
+
+* Run `irb`. Run `exit` to exit from interactive mode.
+
+---
 
 ####Python Project Structure
 
